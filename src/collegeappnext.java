@@ -6,6 +6,7 @@ public class collegeappnext extends Applet {
     Button c1,c2,c3,c4,c5,c6 ;
     public void init()
     {
+        setBackground(Color.pink);
 	        
 
 		
