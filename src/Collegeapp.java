@@ -4,10 +4,10 @@ import java.awt.event.*;
 import java.awt.*;
 
 
-public class Collegeapp extends Applet implements ItemListener {
+public class Collegeapp extends Applet implements  ActionListener{
     CheckboxGroup cg1;
     Checkbox BTECH, BBA, LLB;
-     Button n;
+    
       
     public void init() {
 
@@ -15,52 +15,69 @@ public class Collegeapp extends Applet implements ItemListener {
     BTECH= new Checkbox("B.Tech                                                                    ",cg1,false);
      BBA= new Checkbox( "B.B.A                                                                      ",cg1,false);
      LLB= new Checkbox( "L.L.B                                                                      ",cg1,false);
-     n= new Button(" Next");
+     
      add(BTECH);
      
      add(BBA);
      add(LLB);
-     add(n);
      
-     BTECH.addItemListener(this);
-     BBA.addItemListener(this);
-     LLB.addItemListener(this);
+    // BTECH.addItemListener(this);
+    // BBA.addItemListener(this);
+    // LLB.addItemListener(this);
      
     }
-    /*public Collegeapp()
+    public Collegeapp()
     {
+         Button n= new Button(" Next");
+              add(n);
+
          n.addActionListener(new ActionListener(){
     	  
            public void actionPerformed(ActionEvent ae)
            {
-               collegeappnext sc = new collegeappnext();
-               sc.show();
+               Frame f= new Frame();
                
-             
+               // f.setLayout(null);
+                
+               
+		 Button c1= new Button("Amity School Of Engineering and Technology");
+		 Button c2=new Button("bharti Vidyapeeth Institute Of Technology");
+		 Button c3=new Button("Guru Teg Bahadur institute of Technology");
+                 Button c4=new Button("Maharaja Agrasen Institute of Technology");
+                 Button c5=new Button("Maharaja Surajmal Institute of Technology");
+                 Button c6=new Button("University school Of engineering and Technology");
+		 f.add(c1);
+		 f.add(c2);
+                 f.add(c3);
+                 f.add(c4);
+                 f.add(c5);
+                 f.add(c6);
+                 f.setVisible(true);
+            
            }
        
            }
                 );
     }
-    public static void main (String g[])throws InstantiationException, IllegalAccessException
+  /*  public static void main (String g[])throws InstantiationException, IllegalAccessException
 	{ 
            Collegeapp s=new Collegeapp();
            
 	// stu.setSize(new Dimension(500,500));
 	 //stu.setTitle("student registration");
-	 //stu.setVisible(true);
-        ;
+	 s.setVisible(true);
+        
 	}
-    */
-    @Override
+    
+   /* @Override
     public void itemStateChanged(ItemEvent e) {
       repaint(); 
     }
-
-  /*  @Override
+*/
+    @Override
     public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); 
        //To change body of generated methods, choose Tools | Templates.
     }
- */
+ 
 }

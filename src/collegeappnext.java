@@ -3,8 +3,11 @@ import java.applet.*;
 
 
 public class collegeappnext extends Applet {
-	Button c1,c2,c3,c4,c5,c6 ;
-	public void init() {
+    Button c1,c2,c3,c4,c5,c6 ;
+    public void init()
+    {
+	        
+
 		
 		 Button c1= new Button("Amity School Of Engineering and Technology");
 		 Button c2=new Button("bharti Vidyapeeth Institute Of Technology");
@@ -18,6 +21,7 @@ public class collegeappnext extends Applet {
                  add(c4);
                  add(c5);
                  add(c6);
-	}
+}
+
 
 }
