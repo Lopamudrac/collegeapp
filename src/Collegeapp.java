@@ -10,6 +10,7 @@ public class Collegeapp extends Applet implements  ActionListener{
     
       
     public void init() {
+        setBackground(Color.pink);
 
     cg1=new CheckboxGroup();
     BTECH= new Checkbox("B.Tech                                                                    ",cg1,false);
@@ -20,16 +21,16 @@ public class Collegeapp extends Applet implements  ActionListener{
      
      add(BBA);
      add(LLB);
-     
+      Button n= new Button(" Next");
+              add(n);
     // BTECH.addItemListener(this);
     // BBA.addItemListener(this);
     // LLB.addItemListener(this);
      
     }
-    public Collegeapp()
+    /*public Collegeapp()
     {
-         Button n= new Button(" Next");
-              add(n);
+        
 
          n.addActionListener(new ActionListener(){
     	  
